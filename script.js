@@ -137,3 +137,44 @@
 // console.log(out1);
 ////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
+//Your tasks:
+// 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+
+
+// const untilYearsOfRetirement =(names,birthyear)  => {
+//     const age = 2022-birthyear;
+//     const yearsOfRetirement =65-age;
+//     return `${names} retires after ${yearsOfRetirement} years`;
+// }
+// const out1=untilYearsOfRetirement('Rosdell' ,1994)
+// console.log(out1);
+
+/////////////////////CHALLENGE ON FUNCTIONS//////////////////////////
+
+// const calcAverage=(a,b,c)=>{
+//     const average=(a+b+c)/3;
+//       return average;
+// }
+// const koalas = calcAverage(4, 23, 71);
+// const dolphins = calcAverage( 65, 54 , 49);
+// console.log(koalas,dolphins);
+
+
+// const checkWinner=function(k,d){
+    
+//     if (k>=d*2){
+//         return`koalas is the winner with ${k} vs ${d}`
+//     }else if (k*2<=d){
+//         return`dolphins is the winner ${d} vs ${k}`
+//     }else{ return`no team wins`;}
+// }
+
+// const checker=checkWinner(koalas,dolphins);
+// console.log(checker)
+// console.log(checkWinner( 1000,3) )
+
+// ////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+
+
