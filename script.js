@@ -176,5 +176,70 @@
 // ////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
 
+//////////INTRODUCTION TO ARRAYS////////////////////
+// const friend1='mike';
+// const friend2='peter'; 
+// const friend3='kyle'
+
+// const friends =['mike','peter','kyle'];
+// console.log(friends);
+// console.log(friends[0]) //first element
+// console.log(friends.length); //number of element
+// console.log(friends[friends.length-1]);//last element
+// friends[2]='jay';//change from kyle to jay
+// console.log(friends)
+// ///
+// const years= new Array(1990,1991,1992,1993);//using array function
+// console.log(years)
+// //only primitive values are immutable so ''const'' for aray can be re assigned;
+
+// const firstname='OUMA';
+// const myData=[firstname,'Denish Rosdell',2022-1994,friends];
+// console.log(myData);
+
+///////////////////////////////////////////////////////////////
+// ///////EXERCISE////// storing results in array
+// const calAge=function(birthYear){
+//     return 2022-birthYear;
+// }
+// const years=[1990,1991,1992,1993]
+
+// const age1=calAge(years[0]);
+// const age2=calAge(years[1]);
+// const age3=calAge(years[years.length-1]);
+
+// console.log(age1,age2,age3); //manually
+
+// //storing in array now
+// const ages = [calAge(years[0]),calAge(years[1]),calAge(years[years.length-1])]
+// console.log(ages);
+////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////
+
+// ////////BASIC ARRAY/////////////////////
+// const friends =['mike','peter','kyle'];
+// const newLength =friends.push('jayz')//add at the end
+// console.log(friends)
+// console.log(newLength);
+
+// friends.unshift('jake')      //add at the beginning
+// console.log(friends)        //
+// // friends.pop()           //removes the last element from the console
+// console.log(friends)      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+// console.log(friends)     //
+// // friends.pop()        //removes the last element from the console
+// // friends.pop()  ?    //removes the last element from the console
+// friends.shift()       //removes the first elemet from the list of array
+// console.log(friends.indexOf('jayz')); //rem it willtake from the parent list
+
+// console.log(friends.includes('peter'));// true  ,,,b'se it's there
+// console.log(friends.includes('bob'));  //false  ,,,b'se it's not there
 
 
+// //includes() used scenarios
+// if (friends.includes('peter')){
+//     console.log('i have a friend called peter')
+// }
+
+/////////////////////CODING CHALLENGE About ARRAYS//////////////
+///////////////////////////////////////////////////////////////
