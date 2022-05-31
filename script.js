@@ -270,4 +270,24 @@
 // console.log(Rosdello);
 
 ///////////////////////////////////////////////
-/////////////DOT AND BRACKET//////////////////
+/////////////DOT vs BRACKET NOTATION//////////////////
+
+// const Rosdello={
+//     FirstName:'OUMA',
+//     LastName :'Denish Rosdell',
+//     age      :2022-1994,
+//     profesion:'developer',
+//     friends  :['mike','peter','charles']
+// }
+// console.log(Rosdello.FirstName);
+// console.log(Rosdello['LastName']);
+
+// const namekey = 'Name';
+// console.log(Rosdello['First'+ namekey]) //with squarebracket you could put any expression
+// console.log(Rosdello['Last'+ namekey])
+
+// ////
+// const interestedIn= prompt('what do u want to know about Rosdell agee,friends,profession')
+// console.log(Rosdello[interestedIn]);//but dot notation cannot work here
+// //////////////////////////////////////
+// ///////////////////////////////////////////////
