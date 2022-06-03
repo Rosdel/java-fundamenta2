@@ -1,7 +1,7 @@
-'use strict' ///should be in the firstline,it helps to catch js errors we thout strict modejavascript would then fail silently without letting us know that we did a mistake and for strict mode to be activated we need to write itin the first line
+"use strict" ///should be in the firstline,it helps to catch js errors we thout strict modejavascript would then fail silently without letting us know that we did a mistake and for strict mode to be activated we need to write itin the first line
 
 ////////////////////
-// functions are piece of code that we can use over and over again 
+// functions are piece of code that we can use over and over again
 // function logger(){
 //     console.log('my name is rosdell')
 // }
@@ -66,12 +66,10 @@
 // }
 // console.log(output1)
 
-
 ////ARROW FUNCTIONS//////////////////arrow functions
 // const AgeClc =  birthYear3=> 2022-birthYear3;
 // const vibe= AgeClc(1994);
 // console.log(vibe);
-
 
 /////////////////////////////////////trial just
 // const agge = birthday=>2022-birthday;
@@ -140,7 +138,6 @@
 //Your tasks:
 // 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 
-
 // const untilYearsOfRetirement =(names,birthyear)  => {
 //     const age = 2022-birthyear;
 //     const yearsOfRetirement =65-age;
@@ -159,9 +156,8 @@
 // const dolphins = calcAverage( 65, 54 , 49);
 // console.log(koalas,dolphins);
 
-
 // const checkWinner=function(k,d){
-    
+
 //     if (k>=d*2){
 //         return`koalas is the winner with ${k} vs ${d}`
 //     }else if (k*2<=d){
@@ -178,7 +174,7 @@
 
 //////////INTRODUCTION TO ARRAYS////////////////////
 // const friend1='mike';
-// const friend2='peter'; 
+// const friend2='peter';
 // const friend3='kyle'
 
 // const friends =['mike','peter','kyle'];
@@ -225,7 +221,7 @@
 // friends.unshift('jake')      //add at the beginning
 // console.log(friends)        //
 // // friends.pop()           //removes the last element from the console
-// console.log(friends)      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+// console.log(friends)      //                                                                         // p
 // console.log(friends)     //
 // // friends.pop()        //removes the last element from the console
 // // friends.pop()  ?    //removes the last element from the console
@@ -235,7 +231,6 @@
 // console.log(friends.includes('peter'));// true  ,,,b'se it's there
 // console.log(friends.includes('bob'));  //false  ,,,b'se it's not there
 
-
 // //includes() used scenarios
 // if (friends.includes('peter')){
 //     console.log('i have a friend called peter')
@@ -243,9 +238,9 @@
 
 /////////////////////CODING CHALLENGE About ARRAYS///////////////
 ////////////////////////////////////////////////////////////////
- 
+
 // const calcTip = function(bill) {  ///using expresion method
-//    return bill>=50 && bill<=300 ? bill*0.15:bill*0.2; 
+//    return bill>=50 && bill<=300 ? bill*0.15:bill*0.2;
 // }
 // // const calcTip=bill=>bill>=50 && bill<=300 ? bill*0.15:bill*0.2;using arrow method
 
@@ -253,7 +248,7 @@
 // const tips = [ calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]) ]////creating array
 // console.log(bills,tips);         ///array
 
-//  const total= [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];  ///summing tips abd bill 
+//  const total= [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];  ///summing tips abd bill
 //  console.log(total);
 
 /////////////////////////////////////////////////////////////////
@@ -272,14 +267,14 @@
 ///////////////////////////////////////////////
 /////////////DOT vs BRACKET NOTATION//////////////////
 
-const Rosdello={
-    FirstName:'OUMA',
-    LastName :' Rosdell',
-    age      :2022-1994,
-    profesion:'developer',
-    friends  :['mike','peter','charles']
-}
-// console.log(Rosdello.FirstName);
+// const Rosdello = {
+//   FirstName: "OUMA",
+//   LastName: " Rosdell",
+//   age: 2022 - 1994,
+//   profesion: "developer",
+//   friends: ["mike", "peter", "charles"],
+// }
+// // console.log(Rosdello.FirstName);
 // console.log(Rosdello['LastName']);
 
 // const namekey = 'Name';
@@ -291,8 +286,85 @@ const Rosdello={
 // console.log(Rosdello[interestedIn]);//but dot notation cannot work here
 //////////////////////////////////////
 ///////////////////////////////////////////////
-///////////CHANLENGE///////// Retrieve without HARD CODING////
-/////'Rosdell has 3 friends and his first friend is called mike'
-console.log(`${Rosdello.FirstName} has ${Rosdello.friends.length} and his first friend is ${Rosdello.friends[0]}`)
+// ///////////CHANLENGE///////// Retrieve without HARD CODING////
+// /////'Rosdell has 3 friends and his first friend is called mike'
+// console.log(
+//   `${Rosdello.FirstName} has ${Rosdello.friends.length} and his first friend is ${Rosdello.friends[0]}`
+// )
+// //mdn operator precedence
+// /////////////////////////////////////////////////////////
+//////////////////////OBJECTS METHODS////////////////////
 
-//////////////////////////////
+// const Rosdello = {
+//   FirstName: "OUMA",
+//   LastName: " Rosdell",
+//   birthYear: 1994,
+//   profesion: "developer",
+//   friends: ["mike", "peter", "charles"],
+//   hasDriverLicense: true,
+
+//   //case 1
+//   //   calAge: function (birthYear) {
+//   //     return 2022 - birthYear
+//   //     },
+//   //case 2
+//   //   calAge: function () {
+//   //     console.log(this) //this displays the whole objects...
+//   //     return 2022 - this.birthYear
+//   //   },
+//   calAge: function () {
+//     this.age = 2022 - this.birthYear
+//     return
+//   },
+// }
+// //
+
+// console.log(Rosdello.age)
+// // //     calAge: function () {
+// // //         this.age =2022- this.birthYear
+// // //         return this.age
+// //     }
+
+// }
+// console.log(this.age)
+// console.log(Rosdello.calAge());
+// console.log(Rosdello['calAge'](1994))
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////CODING CHALLENGE 3/////////////////////////
+
+//bmi = mass / heigth ** 2
+
+// const John = {
+//   fullName: "John smith",
+//   mass: 78,
+//   heigth: 1.69,
+//   calcbmi: function () {
+//     //////this code has always failed to run though everythingseems the same
+//     this.bmi = this.mass / this.heigth ** 2
+//     return bmi
+//   },
+// }
+
+// const Mark = {
+//   fullName: "Mark miller",
+//   mass: 78,
+//   heigth: 1.69,
+//   calcbmi: function () {
+//     //////this code has always failed to run though everythingseems the same
+//     this.bmi = this.mass / this.heigth ** 2
+//     return bmi
+//   },
+// }
+// John.calcbmi() //initializing the fucntion so that the lower codes works
+// Mark.calcbmi() //initializing the fucntion so that the lower codes works
+// console.log(John.bmi, Mark.bmi) ///this line works because they have ebeen initialize
+
+// if (John.bmi > Mark.bmi) {
+//   console.log(
+//     `${John.fullName} BMI (${John.bmi})  is higher than ${Mark.fullName} (${Mark.bmi})`
+//   )
+// } else if (John.bmi < Mark.bmi) {
+//   onsole.log(
+//     `${Mark.fullName} BMI (${Mark.bmi})  is higher than ${John.fullName} (${John.bmi})`
+//   )
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////LOOPS////////////////////////
