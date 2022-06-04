@@ -368,3 +368,106 @@
 //   )
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////LOOPS////////////////////////
+
+// //for loops runs while the condition is true
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weight repetition ${rep} ✌`)
+// }
+
+////////////////////////////////////////////////////
+// const RosdellArray = [
+//   "rosdell",
+//   "ouma",
+//   "student",
+//   "sturbon",
+//   ["fred", "titus", "mike", "venus"],
+//   true,
+// ]
+
+// for (let i = 0; i < RosdellArray.length; i++) {
+//   console.log(
+//     `this is item no ${i + 1} and it is ${RosdellArray[i]}`,
+//     typeof RosdellArray[i]
+//   )
+// }
+
+////////////////////////////////////////
+
+// const years = [1990, 1993, 1994, 1993, 1994, 1997]
+// let ages = []
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2022 - years[i])
+// }
+// console.log(ages)
+
+//////////////////////////////////////////////////////////
+///////////CONTINUE AND BREAK STATEMENT//////////////////
+
+// const RosdellArray = [
+//   "rosdell",
+//   "ouma",
+//   "student",
+//   "sturbon",
+//   ["fred", "titus", "mike", "venus"],
+//   true,
+// ]
+
+// console.log("-----ONLY STRINGS---------")
+// for (let i = 0; i < RosdellArray.length; i++) {
+//   if (typeof RosdellArray[i] !== "String") continue
+//   console.log(RosdellArray[i], typeof RosdellArray[i])
+// }
+
+/////////////////////////////////////////////////
+////////////////////////LOOPING BACKWARD AND LOOPING IN A LOOP//////////
+// ///4 3 2 1 backward
+// for (let i = RosdellArray.length - 1; i >= 0; i--) {
+//   console.log(i, RosdellArray[i])
+// }
+
+////loop inside a loop
+
+////////////////////////////////////////////////////////////////////////////////////////while loop/////////////////////////////
+
+// let rep = 1
+// while (rep < 6) {
+//   console.log(`you are my number ${rep} 😆`)
+//   rep++
+// }
+
+//////////////////////ROLLING DICE////////////////////
+// let dice = Math.trunc(Math.random() * 6) + 1
+// while (dice !== 6) {
+//   console.log(`you rolled a ${dice}`)
+//   dice = Math.trunc(Math.random() * 6) + 1
+// }
+// /////////////////////////////////////////////////////
+///////////////////////CHALLENGE 4 ////////////////////
+// const calcTip = function (bills) {
+//   return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2
+// }
+
+// const biils = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+// let tips = []
+// let total = []
+
+// for (let i = 0; i < biils.length; i++) {
+//   const tip = calcTip(biils[i])
+//   tips.push(tip)
+//   total.push(tip + biils[i])
+// }
+// console.log(tips)
+// console.log(total)
+/////////////////////////////////////////////////////
+////////////// BONUS ///////////////////////////////
+// const callAverage = function (arr) {
+//   let sum = 0
+//   for (let i = 0; i < arr.length; i++) {
+//     //   sum=sum+arr[i]     ///if u are using this you leave out i++
+//     sum += arr[i]
+//   }
+//   return sum / arr.length
+// }
+// console.log(callAverage([1, 2, 3])) //////correct
+// console.log(callAverage(total)) /////you need to activate the upper function first or uncomment it...
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
